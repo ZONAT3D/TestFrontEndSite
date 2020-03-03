@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-function Header(prop) {
+export function Header(prop) {
   return (
     <div className="App-header">
         <>{prop.headerName}</>
@@ -13,5 +13,3 @@ function Header(prop) {
     </div>
   );
 }
-
-export default Header;
