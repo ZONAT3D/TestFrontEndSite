@@ -1,23 +1,14 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: hsl(266, 34%, 18%);
+  height: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  text-align: right;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -28,11 +19,16 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Socials {
+  position: absolute;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.Socials-Buttons {
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

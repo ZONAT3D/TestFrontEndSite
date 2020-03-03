@@ -6,7 +6,9 @@ import Header from './Components/Header.js';
 function App() {
   return (
     <>
-      <Header />
+      <Header headerName="My Cool Website"
+              onButtonClick={() => alert('Button has been clicked! :) Good Job')}
+      />
       <h1>Hello World</h1>
     </>
   );
