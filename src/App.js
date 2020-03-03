@@ -7,9 +7,7 @@ import {Notification} from './Components/Notification';
 function App() {
   return (
     <>
-      <Header headerName="My Cool Website"
-              onButtonClick={() => alert('Button has been clicked! :) Good Job')}
-      />
+      <Header headerName="My Cool Website"/>
       <div className="Notifications">
         <Notification notiType="Success" message="oh hey ,you did it right"/>
         <Notification notiType="Error" message="uh oh"/>

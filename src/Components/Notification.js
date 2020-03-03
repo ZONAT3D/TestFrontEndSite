@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaRegWindowClose } from "react-icons/fa";
+import { IoIosClose } from "react-icons/io";
 import '../App.css';
 
 export class Notification extends React.Component {
@@ -18,9 +18,9 @@ export class Notification extends React.Component {
             <>
                 {this.state.showNoti && 
                 <div className={ 'Notification ' + this.props.notiType } >
-                    <p style={{ fontWeight: "bold", minWidth: "90px" }} >{this.props.notiType}:&nbsp;</p>
-                    <p>{this.props.message}</p>
-                    <FaRegWindowClose class="far" onClick={this.closeNotification} style={{ marginRight: "15px", marginLeft: "auto", order: "2"}}></FaRegWindowClose>
+                    <div style={{ fontWeight: "bold", minWidth: "90px" }} >{this.props.notiType}:&nbsp;</div>
+                    <div>{this.props.message}</div>
+                    <div><IoIosClose  style={{ position: "absolute", right: "1px", top: "1px"}} onClick={this.closeNotification} ></IoIosClose></div>
                 </div>
                 }
             </>
