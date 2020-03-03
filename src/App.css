@@ -1,5 +1,6 @@
 html {
   /* Full page styling here */
+  background-color: whitesmoke;
 }
 
 .App {
@@ -9,6 +10,7 @@ html {
 .App-header {
   background-color: hsl(266, 34%, 18%);
   height: 50px;
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
@@ -93,4 +95,9 @@ html {
   align-items: center;
   background-color: rgba(128, 249, 255, .8);
   padding-left: 10px;
+}
+
+.Clock {
+  position: absolute;
+  left: 10px;
 }
