@@ -4,7 +4,7 @@ import '../App.css';
 export class Clock extends React.Component {
     componentDidMount() {
         this.updateTime()
-        this.setState({"timer": setInterval(this.updateTime, 1000)});
+        this.setState({"timer": setInterval(this.updateTime, 1000)})
     }
 
     componentWillUnmount() {
@@ -31,6 +31,6 @@ export class Clock extends React.Component {
     updateTime = function() {
         this.setState({
             currentTime: new Date().toLocaleTimeString()
-        });
+        })
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.css';
 import {Clock} from './Clock';
+import '../App.css';
 
 import {FaInstagram} from 'react-icons/fa';
 
